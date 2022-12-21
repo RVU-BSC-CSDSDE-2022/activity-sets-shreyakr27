@@ -6,14 +6,15 @@ void output(int a, int b, int sum);
 int input()
 {
   int num;
-  printf("enter a: \n");
+  printf("enter num: ");
   scanf("%d", &num);
   return num;
 }
 
 int add(int a, int b)
 {
-  int sum = a + b;
+  int sum;
+  sum = a + b;
   return sum;
 }
 
@@ -27,7 +28,6 @@ int main()
   int a, b, sum;
   a = input();
   b = input();
-  sum= add(a, b);
+  sum = add(a, b);
   output(a, b, sum);
-  return 0;
 }
