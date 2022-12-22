@@ -6,12 +6,12 @@ void output(int a, int b, int c, int largest);
 int input()
 {
   int num;
-  printf("enter num: ");
+  printf("enter the number: ");
   scanf("%d", &num);
   return num;
 }
 
-int compare(int a, int b, int c)
+int compare(int a, int b , int c)
 {
   int largest;
   if(a>=b && a>=c)
@@ -31,7 +31,7 @@ int compare(int a, int b, int c)
 
 void output(int a, int b, int c, int largest)
 {
-  printf("the largest of %d, %d and %d", a, b, c, largest);
+  printf("the largest of %d, %d and %d is %d", a, b, c, largest);
 }
 
 int main()
@@ -40,6 +40,6 @@ int main()
   a = input();
   b = input();
   c = input();
-  largest = compare(a, b, c);
+  largest = compare(a, b , c);
   output(a, b, c, largest);
 }
